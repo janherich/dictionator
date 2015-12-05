@@ -1,0 +1,387 @@
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  resources/public/js/goog/deps.js
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.458 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.579 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.866 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: Too few arguments to if at line 21 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 21, column 62
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.516 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: Too few arguments to if at line 33 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 33, column 56
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.563 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: Too few arguments to if at line 35 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 35, column 56
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.279 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.core/??? at line 38 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Use of undeclared Var dictionator.core/??? at line 40 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Use of undeclared Var dictionator.core/input-name at line 42 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.011 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: Wrong number of args (2) passed to: dom/div at line 21 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 21, column 11
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.274 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: Wrong number of args (2) passed to: dom/div at line 16 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 16, column 11
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.218 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: Wrong number of args (2) passed to: dom/div at line 16 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 16, column 11
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.195 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: Wrong number of args (2) passed to: dom/div at line 18 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 18, column 11
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.232 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: Wrong number of args (2) passed to: dom/div at line 18 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 18, column 11
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.144 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: Wrong number of args (2) passed to: dom/div at line 28 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 28, column 11
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.191 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: Wrong number of args (2) passed to: dom/div at line 28 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 28, column 11
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.216 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Bad extend-type method shape for protocol Object method defui, method arities must be grouped together at line 15 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Use of undeclared Var dictionator.core/??? at line 19 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: nth not supported on this type: Symbol at line 28 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 28, column 3
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.206 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Bad extend-type method shape for protocol Object method defui, method arities must be grouped together at line 15 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: nth not supported on this type: Symbol at line 25 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 25, column 3
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.149 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mERROR: EOF while reading, starting at line 35 and column 38 on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 72, column 1
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.15 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.core/??? at line 48 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: Too few arguments to if at line 50 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 50, column 56
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.266 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: InputName at line 27 is being replaced at line 40 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Use of undeclared Var dictionator.core/??? at line 51 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: Too few arguments to if at line 53 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 53, column 56
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.434 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: InputName at line 27 is being replaced at line 40 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Use of undeclared Var dictionator.core/??? at line 51 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: Too few arguments to if at line 53 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 53, column 56
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.304 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: InputName at line 27 is being replaced at line 40 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Use of undeclared Var dictionator.core/??? at line 54 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: Too few arguments to if at line 56 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 56, column 56
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.488 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: InputName at line 27 is being replaced at line 40 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Use of undeclared Var dictionator.core/??? at line 55 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: Too few arguments to if at line 57 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 57, column 56
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.401 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: InputName at line 27 is being replaced at line 40 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Use of undeclared Var dictionator.core/??? at line 55 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: Too few arguments to if at line 57 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 57, column 56
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.271 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.core/??? at line 55 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Use of undeclared Var dictionator.core/actual-screen at line 58 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Use of undeclared Var dictionator.core/actual-screen at line 59 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: nth not supported on this type: Symbol at line 63 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 63, column 3
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.508 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.core/??? at line 55 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Use of undeclared Var dictionator.core/actual-screen at line 58 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Use of undeclared Var dictionator.core/actual-screen at line 59 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.646 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.core/actual-screen at line 45 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Use of undeclared Var dictionator.core/actual-screen at line 46 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+[31mCompiling "resources/public/js/main.js" failed.
+[0mERROR: Unmatched delimiter ) on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 46, column 53
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.388 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.core/actual-screen at line 45 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Use of undeclared Var dictionator.core/actual-screen at line 46 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+[31mCompiling "resources/public/js/main.js" failed.
+[0mERROR: Unmatched delimiter ) on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 46, column 53
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.529 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.core/actual-screen at line 45 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Use of undeclared Var dictionator.core/actual-screen at line 46 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+[31mCompiling "resources/public/js/main.js" failed.
+[0mERROR: EOF while reading, starting at line 48 and column 1 on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 85, column 1
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.248 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.core/actual-screen at line 45 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Use of undeclared Var dictionator.core/actual-screen at line 46 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.733 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Wrong number of args (2) passed to dictionator.core/screens at line 61 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Wrong number of args (2) passed to dictionator.core/screens at line 63 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.524 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.core/actual-screen at line 61 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Use of undeclared Var dictionator.core/actual-screen at line 63 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.709 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.889 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.736 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.484 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.777 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.942 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.493 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.94 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.core/event at line 55 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.073 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.524 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.385 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.471 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.573 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.566 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.865 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.502 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.093 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.261 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.885 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.037 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.538 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.024 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.368 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.219 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.291 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.166 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.307 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.175 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.139 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: clojure.lang.Cons cannot be cast to clojure.lang.Named at line 15 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 15, column 1
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.215 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: clojure.lang.Cons cannot be cast to clojure.lang.Named at line 15 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 15, column 1
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.369 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.815 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.408 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.928 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.19 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.967 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.837 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.229 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.952 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.753 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.824 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.824 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.588 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.503 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.504 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.82 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.487 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.831 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.86 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.062 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.884 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Bad method signature in protocol implementation, om/IQuery does not declare method called render at line 15 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+WARNING: Bad method signature in protocol implementation, om/IQuery does not declare method called render at line 15 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.885 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.67 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Wrong number of args (2) passed to cljs.core/assoc at line 94 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.884 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Wrong number of args (2) passed to cljs.core/assoc at line 94 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.527 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.273 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.531 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.565 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.531 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.816 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.747 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: let requires an even number of forms in binding vector at line 21 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 21, column 11
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.322 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mANALYSIS ERROR: let requires an even number of forms in binding vector at line 21 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs on file /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs, line 21, column 11
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.326 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.004 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.799 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.876 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.571 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.724 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.518 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.737 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.87 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.212 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.356 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.194 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.19 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.917 seconds.[0m
