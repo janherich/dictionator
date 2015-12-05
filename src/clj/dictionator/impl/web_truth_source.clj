@@ -6,13 +6,18 @@
 
 (def ^:private response-payload (comp #(parse-string % (comp keyword lower-case)) :body))
 
-(deftype WebTruthSource [url truth?]
+(deftype WebTruthSource [url truth? term]
   p/TruthSource
   (exists? [this term]
-    (truth? term @(http/get (format url (join "+" (split term #"\s")))))))
+    (truth? term @(http/get (format url (join "+" (split term #"\s"))))))
+  (truth-term [this]
+    term))
 
 (let [truth? (fn [term response]
                (= (-> term trim upper-case)
                   (some-> response response-payload :title trim upper-case)))]
   (def movie-truth-source
-    (WebTruthSource. "http://www.omdbapi.com/?t=%s" truth?)))
+    (WebTruthSource.
+     "http://www.omdbapi.com/?t=%s"
+     truth?
+     "movie")))

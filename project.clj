@@ -7,6 +7,7 @@
                  [org.clojure/clojurescript "1.7.170"]
                  [org.clojure/core.async "0.2.374"]
                  [ring/ring-core "1.4.0"]
+                 [ring-transit "0.1.4" :exclusions [[com.cognitect/transit-clj]]]
                  [http-kit "2.1.19"]
                  [cheshire "5.5.0"]
                  [bidi "1.21.1"]
@@ -25,4 +26,7 @@
                           :output-dir "resources/public/js/out"}}]
   :main ^:skip-aot dictionator.core
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}})
+  :profiles {:uberjar {:aot :all}
+             :dev {:source-paths ["src/dev"]
+                   :dependencies [[org.clojure/tools.namespace "0.2.11"]]
+                   :repl-options {:init-ns dictionator.dev}}})

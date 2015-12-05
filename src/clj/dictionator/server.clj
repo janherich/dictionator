@@ -1,8 +1,9 @@
 (ns dictionator.server
   (:require [com.stuartsierra.component :as component]
             [org.httpkit.server :as httpkit]
-            [ring.util.response :refer [resource-response]]
+            [ring.middleware.transit :refer [wrap-transit-response wrap-transit-body]]
             [ring.middleware.resource :refer [wrap-resource]]
+            [ring.util.response :refer [response]]
             [bidi.bidi :as bidi]))
 
 (def routes
@@ -10,12 +11,12 @@
                :post {[""] :mutate}}}])
 
 (def handlers
-  {:read (fn [req] {:status 200
-                    :body "reading..."})
-   :mutate (fn [req] {:status 204
-                      :body "mutating..."})
-   :not-found (fn [req] {:status 404
-                         :body "ooops..."})})
+  {:read (fn [req]
+           (response {:vals [:a :b :c]}))
+   :mutate (fn [req]
+             (response {:keys [:a :b :c]}))
+   :not-found (fn [req]
+                (response {:code :not-found}))})
 
 (defn router [{:keys [uri request-method] :as req}]
   (let [{:keys [handler]} (bidi/match-route routes uri :request-method request-method)]
@@ -27,27 +28,35 @@
     (handler (assoc req :app-state app-state))))
 
 (defn prod-handler [app-state]
-  (wrap-resource
-   (wrap-state router app-state)
-   "public"))
+  (-> router
+      (wrap-state app-state)
+      wrap-transit-response
+      wrap-transit-body
+      (wrap-resource "public")))
 
 (defn dev-handler [app-state]
   (fn [req]
-    ((prod-handler app-state) req)))
+    ((-> (prod-handler app-state)
+         (wrap-resource "public"))
+     req)))
 
-(defrecord WebServer [port handler app-state]
+(defrecord WebServer [port handler app-state shut-down]
   component/Lifecycle
-  (component/start [component]
-    (let [request-handler (handler app-state)
-          server (httpkit/run-server handler {:port port})] ;; server constructor returns shutdown-fn
-      (assoc component :shut-down server)))
-  (component/stop [component]
+  (start [component]
+    (if shut-down ;; don't start server if shut-down function present - server already started
+      component
+      (let [request-handler (handler app-state)
+            server (httpkit/run-server request-handler {:port port})] ;; server constructor returns shutdown-fn
+        (assoc component :shut-down server))))
+  (stop [component]
     (when-let [shutdown-fn (:shut-down component)]
       (shutdown-fn))
     (dissoc component :shut-down)))
 
 (defn dev-server [web-port]
-  (WebServer. web-port dev-handler nil))
+  (map->WebServer {:port 3000
+                   :handler dev-handler}))
 
 (defn prod-server [web-port]
-  (WebServer. web-port prod-handler nil))
+  (map->WebServer {:port 3000
+                   :handler prod-handler}))
