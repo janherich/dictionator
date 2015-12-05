@@ -542,3 +542,449 @@ notifying browser that file changed:  out/dictionator/core.js
 [0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
 notifying browser that file changed:  out/dictionator/core.js
 [32mSuccessfully compiled "resources/public/js/main.js" in 0.629 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.619 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.838 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mjava.lang.AssertionError: No ns form found in src/cljs/dictionator/singleplayer.cljs
+ at cljs.analyzer$parse_ns$fn__1924.invoke (analyzer.cljc:2731)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2682)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2673)
+    cljs.compiler$find_source.invoke (compiler.cljc:1389)
+    clojure.core$map$fn__4553.invoke (core.clj:2624)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:674)
+    clojure.core/next (core.clj:64)
+    clojure.core$reduce1.invoke (core.clj:909)
+    clojure.core$set.invoke (core.clj:3960)
+    cljs.closure$add_dependency_sources.invoke (closure.clj:731)
+    cljs.closure$build.invoke (closure.clj:1807)
+    cljs.build.api$build.invoke (api.clj:207)
+    figwheel_sidecar.components.cljs_autobuild$cljs_build.invoke (cljs_autobuild.clj:22)
+    figwheel_sidecar.build_middleware.injection$hook$fn__15947.invoke (injection.clj:139)
+    figwheel_sidecar.build_middleware.notifications$hook$fn__16274.invoke (notifications.clj:187)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__16350.invoke (clj_reloading.clj:115)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__16396.invoke (javascript_reloading.clj:60)
+    figwheel_sidecar.components.cljs_autobuild$eval16411$figwheel_start_and_end_messages__16414$fn__16416.invoke (cljs_autobuild.clj:45)
+    figwheel_sidecar.components.cljs_autobuild.CLJSAutobuild$fn__16441$fn__16442.invoke (cljs_autobuild.clj:137)
+    figwheel_sidecar.utils$sync_exec$fn__1973$fn__1974.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__1973.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4444.invoke (core.clj:1919)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1145)
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.162 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mjava.lang.AssertionError: No ns form found in src/cljs/dictionator/multiplayer.cljs
+ at cljs.analyzer$parse_ns$fn__1924.invoke (analyzer.cljc:2731)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2682)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2673)
+    cljs.compiler$find_source.invoke (compiler.cljc:1389)
+    clojure.core$map$fn__4553.invoke (core.clj:2624)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:674)
+    clojure.core/next (core.clj:64)
+    clojure.core$reduce1.invoke (core.clj:909)
+    clojure.core$set.invoke (core.clj:3960)
+    cljs.closure$add_dependency_sources.invoke (closure.clj:731)
+    cljs.closure$build.invoke (closure.clj:1807)
+    cljs.build.api$build.invoke (api.clj:207)
+    figwheel_sidecar.components.cljs_autobuild$cljs_build.invoke (cljs_autobuild.clj:22)
+    figwheel_sidecar.build_middleware.injection$hook$fn__15947.invoke (injection.clj:139)
+    figwheel_sidecar.build_middleware.notifications$hook$fn__16274.invoke (notifications.clj:187)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__16350.invoke (clj_reloading.clj:115)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__16396.invoke (javascript_reloading.clj:60)
+    figwheel_sidecar.components.cljs_autobuild$eval16411$figwheel_start_and_end_messages__16414$fn__16416.invoke (cljs_autobuild.clj:45)
+    figwheel_sidecar.components.cljs_autobuild.CLJSAutobuild$fn__16441$fn__16442.invoke (cljs_autobuild.clj:137)
+    figwheel_sidecar.utils$sync_exec$fn__1973$fn__1974.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__1973.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4444.invoke (core.clj:1919)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1145)
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.039 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mjava.lang.AssertionError: No ns form found in src/cljs/dictionator/multiplayer.cljs
+ at cljs.analyzer$parse_ns$fn__1924.invoke (analyzer.cljc:2731)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2682)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2673)
+    cljs.compiler$find_source.invoke (compiler.cljc:1389)
+    clojure.core$map$fn__4553.invoke (core.clj:2624)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:674)
+    clojure.core/next (core.clj:64)
+    clojure.core$reduce1.invoke (core.clj:909)
+    clojure.core$set.invoke (core.clj:3960)
+    cljs.closure$add_dependency_sources.invoke (closure.clj:731)
+    cljs.closure$build.invoke (closure.clj:1807)
+    cljs.build.api$build.invoke (api.clj:207)
+    figwheel_sidecar.components.cljs_autobuild$cljs_build.invoke (cljs_autobuild.clj:22)
+    figwheel_sidecar.build_middleware.injection$hook$fn__15947.invoke (injection.clj:139)
+    figwheel_sidecar.build_middleware.notifications$hook$fn__16274.invoke (notifications.clj:187)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__16350.invoke (clj_reloading.clj:115)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__16396.invoke (javascript_reloading.clj:60)
+    figwheel_sidecar.components.cljs_autobuild$eval16411$figwheel_start_and_end_messages__16414$fn__16416.invoke (cljs_autobuild.clj:45)
+    figwheel_sidecar.components.cljs_autobuild.CLJSAutobuild$fn__16441$fn__16442.invoke (cljs_autobuild.clj:137)
+    figwheel_sidecar.utils$sync_exec$fn__1973$fn__1974.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__1973.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4444.invoke (core.clj:1919)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1145)
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.077 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mjava.lang.AssertionError: No ns form found in src/cljs/dictionator/multiplayer.cljs
+ at cljs.analyzer$parse_ns$fn__1924.invoke (analyzer.cljc:2731)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2682)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2673)
+    cljs.compiler$find_source.invoke (compiler.cljc:1389)
+    clojure.core$map$fn__4553.invoke (core.clj:2624)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:674)
+    clojure.core/next (core.clj:64)
+    clojure.core$reduce1.invoke (core.clj:909)
+    clojure.core$set.invoke (core.clj:3960)
+    cljs.closure$add_dependency_sources.invoke (closure.clj:731)
+    cljs.closure$build.invoke (closure.clj:1807)
+    cljs.build.api$build.invoke (api.clj:207)
+    figwheel_sidecar.components.cljs_autobuild$cljs_build.invoke (cljs_autobuild.clj:22)
+    figwheel_sidecar.build_middleware.injection$hook$fn__15947.invoke (injection.clj:139)
+    figwheel_sidecar.build_middleware.notifications$hook$fn__16274.invoke (notifications.clj:187)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__16350.invoke (clj_reloading.clj:115)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__16396.invoke (javascript_reloading.clj:60)
+    figwheel_sidecar.components.cljs_autobuild$eval16411$figwheel_start_and_end_messages__16414$fn__16416.invoke (cljs_autobuild.clj:45)
+    figwheel_sidecar.components.cljs_autobuild.CLJSAutobuild$fn__16441$fn__16442.invoke (cljs_autobuild.clj:137)
+    figwheel_sidecar.utils$sync_exec$fn__1973$fn__1974.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__1973.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4444.invoke (core.clj:1919)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1145)
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.066 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mjava.lang.AssertionError: No ns form found in src/cljs/dictionator/multiplayer.cljs
+ at cljs.analyzer$parse_ns$fn__1924.invoke (analyzer.cljc:2731)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2682)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2673)
+    cljs.compiler$find_source.invoke (compiler.cljc:1389)
+    clojure.core$map$fn__4553.invoke (core.clj:2624)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:674)
+    clojure.core/next (core.clj:64)
+    clojure.core$reduce1.invoke (core.clj:909)
+    clojure.core$set.invoke (core.clj:3960)
+    cljs.closure$add_dependency_sources.invoke (closure.clj:731)
+    cljs.closure$build.invoke (closure.clj:1807)
+    cljs.build.api$build.invoke (api.clj:207)
+    figwheel_sidecar.components.cljs_autobuild$cljs_build.invoke (cljs_autobuild.clj:22)
+    figwheel_sidecar.build_middleware.injection$hook$fn__15947.invoke (injection.clj:139)
+    figwheel_sidecar.build_middleware.notifications$hook$fn__16274.invoke (notifications.clj:187)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__16350.invoke (clj_reloading.clj:115)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__16396.invoke (javascript_reloading.clj:60)
+    figwheel_sidecar.components.cljs_autobuild$eval16411$figwheel_start_and_end_messages__16414$fn__16416.invoke (cljs_autobuild.clj:45)
+    figwheel_sidecar.components.cljs_autobuild.CLJSAutobuild$fn__16441$fn__16442.invoke (cljs_autobuild.clj:137)
+    figwheel_sidecar.utils$sync_exec$fn__1973$fn__1974.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__1973.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4444.invoke (core.clj:1919)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1145)
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.067 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mjava.lang.AssertionError: No ns form found in src/cljs/dictionator/multiplayer.cljs
+ at cljs.analyzer$parse_ns$fn__1924.invoke (analyzer.cljc:2731)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2682)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2673)
+    cljs.compiler$find_source.invoke (compiler.cljc:1389)
+    clojure.core$map$fn__4553.invoke (core.clj:2624)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:674)
+    clojure.core/next (core.clj:64)
+    clojure.core$reduce1.invoke (core.clj:909)
+    clojure.core$set.invoke (core.clj:3960)
+    cljs.closure$add_dependency_sources.invoke (closure.clj:731)
+    cljs.closure$build.invoke (closure.clj:1807)
+    cljs.build.api$build.invoke (api.clj:207)
+    figwheel_sidecar.components.cljs_autobuild$cljs_build.invoke (cljs_autobuild.clj:22)
+    figwheel_sidecar.build_middleware.injection$hook$fn__15947.invoke (injection.clj:139)
+    figwheel_sidecar.build_middleware.notifications$hook$fn__16274.invoke (notifications.clj:187)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__16350.invoke (clj_reloading.clj:115)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__16396.invoke (javascript_reloading.clj:60)
+    figwheel_sidecar.components.cljs_autobuild$eval16411$figwheel_start_and_end_messages__16414$fn__16416.invoke (cljs_autobuild.clj:45)
+    figwheel_sidecar.components.cljs_autobuild.CLJSAutobuild$fn__16441$fn__16442.invoke (cljs_autobuild.clj:137)
+    figwheel_sidecar.utils$sync_exec$fn__1973$fn__1974.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__1973.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4444.invoke (core.clj:1919)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1145)
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.066 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mjava.lang.AssertionError: No ns form found in src/cljs/dictionator/multiplayer.cljs
+ at cljs.analyzer$parse_ns$fn__1924.invoke (analyzer.cljc:2731)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2682)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2673)
+    cljs.compiler$find_source.invoke (compiler.cljc:1389)
+    clojure.core$map$fn__4553.invoke (core.clj:2624)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:674)
+    clojure.core/next (core.clj:64)
+    clojure.core$reduce1.invoke (core.clj:909)
+    clojure.core$set.invoke (core.clj:3960)
+    cljs.closure$add_dependency_sources.invoke (closure.clj:731)
+    cljs.closure$build.invoke (closure.clj:1807)
+    cljs.build.api$build.invoke (api.clj:207)
+    figwheel_sidecar.components.cljs_autobuild$cljs_build.invoke (cljs_autobuild.clj:22)
+    figwheel_sidecar.build_middleware.injection$hook$fn__15947.invoke (injection.clj:139)
+    figwheel_sidecar.build_middleware.notifications$hook$fn__16274.invoke (notifications.clj:187)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__16350.invoke (clj_reloading.clj:115)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__16396.invoke (javascript_reloading.clj:60)
+    figwheel_sidecar.components.cljs_autobuild$eval16411$figwheel_start_and_end_messages__16414$fn__16416.invoke (cljs_autobuild.clj:45)
+    figwheel_sidecar.components.cljs_autobuild.CLJSAutobuild$fn__16441$fn__16442.invoke (cljs_autobuild.clj:137)
+    figwheel_sidecar.utils$sync_exec$fn__1973$fn__1974.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__1973.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4444.invoke (core.clj:1919)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1145)
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.032 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mjava.lang.AssertionError: No ns form found in src/cljs/dictionator/multiplayer.cljs
+ at cljs.analyzer$parse_ns$fn__1924.invoke (analyzer.cljc:2731)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2682)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2673)
+    cljs.compiler$find_source.invoke (compiler.cljc:1389)
+    clojure.core$map$fn__4553.invoke (core.clj:2624)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:674)
+    clojure.core/next (core.clj:64)
+    clojure.core$reduce1.invoke (core.clj:909)
+    clojure.core$set.invoke (core.clj:3960)
+    cljs.closure$add_dependency_sources.invoke (closure.clj:731)
+    cljs.closure$build.invoke (closure.clj:1807)
+    cljs.build.api$build.invoke (api.clj:207)
+    figwheel_sidecar.components.cljs_autobuild$cljs_build.invoke (cljs_autobuild.clj:22)
+    figwheel_sidecar.build_middleware.injection$hook$fn__15947.invoke (injection.clj:139)
+    figwheel_sidecar.build_middleware.notifications$hook$fn__16274.invoke (notifications.clj:187)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__16350.invoke (clj_reloading.clj:115)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__16396.invoke (javascript_reloading.clj:60)
+    figwheel_sidecar.components.cljs_autobuild$eval16411$figwheel_start_and_end_messages__16414$fn__16416.invoke (cljs_autobuild.clj:45)
+    figwheel_sidecar.components.cljs_autobuild.CLJSAutobuild$fn__16441$fn__16442.invoke (cljs_autobuild.clj:137)
+    figwheel_sidecar.utils$sync_exec$fn__1973$fn__1974.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__1973.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4444.invoke (core.clj:1919)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1145)
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.07 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mjava.lang.AssertionError: No ns form found in src/cljs/dictionator/multiplayer.cljs
+ at cljs.analyzer$parse_ns$fn__1924.invoke (analyzer.cljc:2731)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2682)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2673)
+    cljs.compiler$find_source.invoke (compiler.cljc:1389)
+    clojure.core$map$fn__4553.invoke (core.clj:2624)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:674)
+    clojure.core/next (core.clj:64)
+    clojure.core$reduce1.invoke (core.clj:909)
+    clojure.core$set.invoke (core.clj:3960)
+    cljs.closure$add_dependency_sources.invoke (closure.clj:731)
+    cljs.closure$build.invoke (closure.clj:1807)
+    cljs.build.api$build.invoke (api.clj:207)
+    figwheel_sidecar.components.cljs_autobuild$cljs_build.invoke (cljs_autobuild.clj:22)
+    figwheel_sidecar.build_middleware.injection$hook$fn__15947.invoke (injection.clj:139)
+    figwheel_sidecar.build_middleware.notifications$hook$fn__16274.invoke (notifications.clj:187)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__16350.invoke (clj_reloading.clj:115)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__16396.invoke (javascript_reloading.clj:60)
+    figwheel_sidecar.components.cljs_autobuild$eval16411$figwheel_start_and_end_messages__16414$fn__16416.invoke (cljs_autobuild.clj:45)
+    figwheel_sidecar.components.cljs_autobuild.CLJSAutobuild$fn__16441$fn__16442.invoke (cljs_autobuild.clj:137)
+    figwheel_sidecar.utils$sync_exec$fn__1973$fn__1974.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__1973.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4444.invoke (core.clj:1919)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1145)
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.036 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mjava.lang.AssertionError: No ns form found in src/cljs/dictionator/multiplayer.cljs
+ at cljs.analyzer$parse_ns$fn__1924.invoke (analyzer.cljc:2731)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2682)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2673)
+    cljs.compiler$find_source.invoke (compiler.cljc:1389)
+    clojure.core$map$fn__4553.invoke (core.clj:2624)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:674)
+    clojure.core/next (core.clj:64)
+    clojure.core$reduce1.invoke (core.clj:909)
+    clojure.core$set.invoke (core.clj:3960)
+    cljs.closure$add_dependency_sources.invoke (closure.clj:731)
+    cljs.closure$build.invoke (closure.clj:1807)
+    cljs.build.api$build.invoke (api.clj:207)
+    figwheel_sidecar.components.cljs_autobuild$cljs_build.invoke (cljs_autobuild.clj:22)
+    figwheel_sidecar.build_middleware.injection$hook$fn__15947.invoke (injection.clj:139)
+    figwheel_sidecar.build_middleware.notifications$hook$fn__16274.invoke (notifications.clj:187)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__16350.invoke (clj_reloading.clj:115)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__16396.invoke (javascript_reloading.clj:60)
+    figwheel_sidecar.components.cljs_autobuild$eval16411$figwheel_start_and_end_messages__16414$fn__16416.invoke (cljs_autobuild.clj:45)
+    figwheel_sidecar.components.cljs_autobuild.CLJSAutobuild$fn__16441$fn__16442.invoke (cljs_autobuild.clj:137)
+    figwheel_sidecar.utils$sync_exec$fn__1973$fn__1974.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__1973.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4444.invoke (core.clj:1919)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1145)
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.086 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.411 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: No such namespace: core, could not locate core.cljs, core.cljc, or Closure namespace "" at line 33 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/singleplayer.cljs
+WARNING: Use of undeclared Var core/footer at line 33 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/singleplayer.cljs
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  out/dictionator/singleplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.833 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+[31mCompiling "resources/public/js/main.js" failed.
+[0mjava.lang.AssertionError: No ns form found in src/cljs/dictionator/common.cljs
+ at cljs.analyzer$parse_ns$fn__1924.invoke (analyzer.cljc:2731)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2682)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2673)
+    cljs.compiler$find_source.invoke (compiler.cljc:1389)
+    clojure.core$map$fn__4553.invoke (core.clj:2624)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:56)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:674)
+    clojure.core/next (core.clj:64)
+    clojure.core$reduce1.invoke (core.clj:909)
+    clojure.core$set.invoke (core.clj:3960)
+    cljs.closure$add_dependency_sources.invoke (closure.clj:731)
+    cljs.closure$build.invoke (closure.clj:1807)
+    cljs.build.api$build.invoke (api.clj:207)
+    figwheel_sidecar.components.cljs_autobuild$cljs_build.invoke (cljs_autobuild.clj:22)
+    figwheel_sidecar.build_middleware.injection$hook$fn__15947.invoke (injection.clj:139)
+    figwheel_sidecar.build_middleware.notifications$hook$fn__16274.invoke (notifications.clj:187)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__16350.invoke (clj_reloading.clj:115)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__16396.invoke (javascript_reloading.clj:60)
+    figwheel_sidecar.components.cljs_autobuild$eval16411$figwheel_start_and_end_messages__16414$fn__16416.invoke (cljs_autobuild.clj:45)
+    figwheel_sidecar.components.cljs_autobuild.CLJSAutobuild$fn__16441$fn__16442.invoke (cljs_autobuild.clj:137)
+    figwheel_sidecar.utils$sync_exec$fn__1973$fn__1974.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__1973.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4444.invoke (core.clj:1919)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1145)
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.065 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.582 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.286 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  out/dictionator/singleplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.119 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.051 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.708 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/singleplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.669 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.638 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/singleplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.609 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.core/footer at line 91 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.976 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.core/footer at line 91 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/core.cljs
+notifying browser that file changed:  out/dictionator/singleplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.634 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.core/footer at line 93 src/cljs/dictionator/core.cljs
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.632 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.core/footer at line 92 src/cljs/dictionator/core.cljs
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.538 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.598 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.594 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.core/a at line 11 src/cljs/dictionator/core.cljs
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.548 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.545 seconds.[0m

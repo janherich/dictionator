@@ -1,18 +1,15 @@
 (ns dictionator.core
   (:require [goog.dom :as gdom]
             [om.next :as om :refer-macros [defui]]
-            [om.dom :as dom]))
-
-(def data {:actual-screen :initial-screen
-           })
-
-
-(def footer
-  (dom/div #js {:id "footer"}
-           (dom/p #js {:className "footer_p"}
-                  "Made with ♥ CodeCouple")))
+            [om.dom :as dom]
+            [dictionator.singleplayer :as singleplayer]
+            [dictionator.multiplayer :as mulatiplayer]
+            [dictionator.common :as common]))
 
 
+(def data {:actual-screen :initial-screen})
+
+;; First screen button
 (defui LetsPlay
   static om/IQuery
   (query [this]
@@ -31,8 +28,11 @@
                                           (dom/div #js {:className "push_button red"}
                                                    "Let's play")))))))
 
+;; Factory for the let's play button (first screen)
 (def lets-play (om/factory LetsPlay))
 
+
+;; Input form for second screen
 (defui InputName
   Object
   (initLocalState [this]
@@ -59,13 +59,19 @@
                                                                      "➔")))))
                    (dom/div #js {:className "col-lg-4"} ""))))
 
+
+;; Factory for Input form
 (def input-name (om/factory InputName))
 
+
+;; Fuctction for selecting the right screen
 (defn screens [actual-screen screen-1 screen-2]
   (cond
     (= actual-screen :initial-screen) screen-1
     (= actual-screen :input-name-screen) screen-2))
 
+
+;; Wrapper for first two screens if singleplayer, first 3 screens if multiplayer
 (defui BasicWrapper
   static om/IQuery
   (query [this]
@@ -83,39 +89,13 @@
                                                 (dom/div #js {:className "row"}
                                                          (screens actual-screen (lets-play {:submit-change-screen submit-change-screen}) (input-name)))
                                                 (dom/div #js {:id "col-md-5"}))))
-                     footer))))
+                     common/footer))))
 
+;; Factory for Wrapper
 (def basic-wrapper (om/factory BasicWrapper))
 
-(defui GameWrapper
-  static om/IQuery
-  (query [this]
-         [])
-  Object
-  (render [this]
-          (dom/div #js {:className "wrapper-game"}
-                   (dom/div #js {:className "row back-button"}
-                            (dom/a #js {:href "#"
-                                        :className "back"}
-                                   "⇦ Leave game"))
-                   ;; (dom/p #js {:className "name"}
-                   ;;        "Dajanka")
-                   (dom/span #js {:className "glyphicon glyphicon-star points"}
-                             (dom/p #js {} 0))
-                   (dom/div #js {:className "row"}
-                            (dom/div #js {:className "col-md-12 text-center previous-word"}
-                                     (dom/h3 #js {:className "prev"} "Previous word: ")
-                                     (dom/p #js {} "Herisk")
-                                     (dom/p #js {:className "last-letter"} "o"))
-                            (dom/div #js {:className "col-md-12 text-center"}
-                                     (dom/form #js {}
-                                               (dom/input #js {:className "input-word"
-                                                               :type "text"
-                                                               :placeholder ""}))))
-                   footer)))
 
-(def game-wrapper (om/factory GameWrapper))
-
+;; Rooting component with the main logic
 (defui RootView
   static om/IQuery
   (query [this]
@@ -124,7 +104,7 @@
   (render [this]
           (let [{:keys [actual-screen name]} (om/props this)]
             (if name
-              (game-wrapper)
+              (singleplayer/game-wrapper)
               (basic-wrapper {:actual-screen actual-screen
                               :submit-change-screen (fn [changed-screen]
                                                       (om/transact! this `[(screens/update-input! {:actual-screen ~changed-screen})]))})))))
