@@ -8,7 +8,7 @@
 
 (deftype WebTruthSource [url truth?]
   p/TruthSource
-  (p/exists? [this term]
+  (exists? [this term]
     (truth? term @(http/get (format url (join "+" (split term #"\s")))))))
 
 (let [truth? (fn [term response]
