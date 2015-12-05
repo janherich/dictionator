@@ -3,7 +3,8 @@
             [om.next :as om :refer-macros [defui]]
             [om.dom :as dom]))
 
-(def data {:actual-screen :initial-screen})
+(def data {:actual-screen :initial-screen
+           })
 
 
 (def footer
@@ -26,8 +27,7 @@
                                                :onClick (fn [event]
                                                           (.preventDefault event)
                                                           ((:submit-change-screen (om/props this))
-                                                           :input-name-screen)
-                                                          (.log js/console (om/props this)))}
+                                                           :input-name-screen))}
                                           (dom/div #js {:className "push_button red"}
                                                    "Let's play")))))))
 
@@ -35,18 +35,28 @@
 
 (defui InputName
   Object
+  (initLocalState [this]
+                  {:form-input ""})
   (render [this]
           (dom/div #js {:className "input-name"}
                    (dom/div #js {:className "col-md-4"} "")
                    (dom/div #js {:className "col-lg-4 text-center"}
-                            (dom/div #js {:className "input-group"}
-                                     (dom/input #js {:type "text"
-                                                     :className "form-control"
-                                                     :placeholder "Your name"})
-                                     (dom/span #js {:className "input-group-btn"}
-                                               (dom/button #js {:className "btn btn-default"
-                                                                :type "button"}
-                                                           "➔"))))
+                            (dom/form #js {:onSubmit (fn [event]
+                                                       (.preventDefault event)
+                                                       (.log js/console (om/get-state this))
+                                                       (om/update-state! this assoc :form-input ""))}
+                                      (dom/div #js {:className "input-group"}
+                                               (dom/input #js {:type "text"
+                                                               :className "form-control"
+                                                               :placeholder "Your name"
+                                                               :value (:form-input (om/get-state this))
+                                                               :onChange (fn [event]
+                                                                           (om/update-state! this assoc :form-input (.. event -target -value)))
+                                                               })
+                                               (dom/span #js {:className "input-group-btn"}
+                                                         (dom/button #js {:className "btn btn-default"
+                                                                          :type "submit"}
+                                                                     "➔")))))
                    (dom/div #js {:className "col-lg-4"} ""))))
 
 (def input-name (om/factory InputName))
@@ -77,16 +87,47 @@
 
 (def basic-wrapper (om/factory BasicWrapper))
 
+(defui GameWrapper
+  static om/IQuery
+  (query [this]
+         [])
+  Object
+  (render [this]
+          (dom/div #js {:className "wrapper-game"}
+                   (dom/div #js {:className "row back-button"}
+                            (dom/a #js {:href "#"
+                                        :className "back"}
+                                   "⇦ Leave game"))
+                   ;; (dom/p #js {:className "name"}
+                   ;;        "Dajanka")
+                   (dom/span #js {:className "glyphicon glyphicon-star points"}
+                             (dom/p #js {} 0))
+                   (dom/div #js {:className "row"}
+                            (dom/div #js {:className "col-md-12 text-center previous-word"}
+                                     (dom/h3 #js {:className "prev"} "Previous word: ")
+                                     (dom/p #js {} "Herisk")
+                                     (dom/p #js {:className "last-letter"} "o"))
+                            (dom/div #js {:className "col-md-12 text-center"}
+                                     (dom/form #js {}
+                                               (dom/input #js {:className "input-word"
+                                                               :type "text"
+                                                               :placeholder ""}))))
+                   footer)))
+
+(def game-wrapper (om/factory GameWrapper))
+
 (defui RootView
   static om/IQuery
   (query [this]
-         [:actual-screen])
+         [:actual-screen :name])
   Object
   (render [this]
-          (let [{:keys [actual-screen]} (om/props this)]
-            (basic-wrapper {:actual-screen actual-screen
-                            :submit-change-screen (fn [changed-screen]
-                                                    (om/transact! this `[(screens/update-input! {:actual-screen ~changed-screen})]))}))))
+          (let [{:keys [actual-screen name]} (om/props this)]
+            (if name
+              (game-wrapper)
+              (basic-wrapper {:actual-screen actual-screen
+                              :submit-change-screen (fn [changed-screen]
+                                                      (om/transact! this `[(screens/update-input! {:actual-screen ~changed-screen})]))})))))
 
 (defmulti mutate (fn [_ k _] k))
 

@@ -208,10 +208,10 @@ h2 {
 .points{
     position: absolute;
     margin-top: 60px;
-    margin-right: 90px;
+    margin-right: 100px;
     right: 0;
     font-size: 30px;
-    color: #BDBD1A;
+    color:#3eacba;  /* #BDBD1A; */
 }
 
 .points p {
@@ -254,6 +254,11 @@ p.last-letter {
     color: rgba(212, 11, 91, 0.73);
 }
 
+.prev {
+    margin-right: 10px;
+}
+
+
 button
 {
     border: none;
@@ -261,5 +266,34 @@ button
 }
 
 button[type="submit"]{
-    outline-style : none;    
+    outline-style : none;
+}
+
+input:active {
+    outline-style: none;
+}
+
+input:focus {
+    outline-style: none;
+}
+
+
+form {
+    display: inline-block;
+}
+
+#content {
+    height: 100%;
+}
+
+.name {
+    position: absolute;
+    margin-top: 60px;
+    margin-right: 280px;
+    right: 0;
+    color: #3eacba;
+}
+
+p.name {
+    font-size: 30px;
 }
