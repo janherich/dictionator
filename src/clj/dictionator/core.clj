@@ -7,5 +7,6 @@
   "starts the Dictionator webservice"
   [& args]
   (let [[port] args]
+    (println (format "Starting Dictionator webservice on port: %s" port))
     (component/start
      (app/prod-system {:web-port 3000}))))
