@@ -31,8 +31,7 @@
   (-> router
       (wrap-state app-state)
       wrap-transit-response
-      wrap-transit-body
-      (wrap-resource "public")))
+      wrap-transit-body))
 
 (defn dev-handler [app-state]
   (fn [req]
