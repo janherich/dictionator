@@ -17,13 +17,13 @@
                  [org.omcljs/om "1.0.0-alpha25"]]
   :source-paths ["src/clj"]
   :plugins [[lein-figwheel "0.5.0-2"]]
-  :cljsbuild [{:id "dev"
-               :source-paths ["src/cljs"]
-               :figwheel true
-               :compiler {:main "dictionator.core"
-                          :asset-path "js/out"
-                          :output-to "resources/public/js/main.js"
-                          :output-dir "resources/public/js/out"}}]
+  :cljsbuild {:builds [{:id "dev"
+                        :source-paths ["src/cljs/"]
+                        :figwheel true
+                        :compiler {:main "dictionator.core"
+                                   :asset-path "js"
+                                   :output-to "resources/public/js/main.js"
+                                   :output-dir "resources/public/js"}}]}
   :main ^:skip-aot dictionator.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}
