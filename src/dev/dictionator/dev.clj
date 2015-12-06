@@ -30,12 +30,13 @@
 
 ;; server state
 (def app-state
-  (atom {:players {"id1" {:channel nil
-                          :name "twiggy"}
-                   "id2" {:channel nil
-                          :name "siggy"}
-                   "id3" {:channel nil
-                          :name "ibi"}}
+  (atom {:players {"ch-id1" {:player-id "id1"
+                             :name "twiggy"
+                             :game "game1"}
+                   "ch-id2" {:player-id "id2"
+                             :name "siggy"}
+                   "ch-id3" {:player-id "id3"
+                             :name "ibi"}}
          :games {"game1" {:players {"id1" {:points 0
                                            :last-try nil}
                                     "id2" {:points 0

@@ -1,37 +1,56 @@
 (ns dictionator.server
   (:require [com.stuartsierra.component :as component]
-            [org.httpkit.server :as httpkit]
-            [ring.middleware.transit :refer [wrap-transit-response wrap-transit-body]]
+            [om.next.server :as om]
+            [org.httpkit.server :as httpkit :refer [with-channel on-close on-receive send!]]
             [ring.middleware.resource :refer [wrap-resource]]
             [ring.util.response :refer [response]]
-            [bidi.bidi :as bidi]))
+            [dictionator.parser :as p]
+            [dictionator.util :as util]))
 
-(def routes
-  ["" {"/api" {:get {[""] :read}
-               :post {[""] :mutate}}}])
+(defn add-player [app-state channel]
+  (assoc-in app-state [:players channel]
+            {:name nil
+             :player-id (java.util.UUID/randomUUID)}))
 
-(def handlers
-  {:read (fn [req]
-           (response {:vals [:a :b :c]}))
-   :mutate (fn [req]
-             (response {:keys [:a :b :c]}))
-   :not-found (fn [req]
-                (response {:code :not-found}))})
+(defn remove-player [app-state channel]
+  (let [player-id (get-in app-state [:players channel :player-id])]
+    (-> app-state
+        (update-in [:players] dissoc channel)
+        (update-in [:games]
+                   (fn [games]
+                     (reduce (fn [acc [game-name {:keys [players] :as game-state}]]
+                               (assoc acc game-name (assoc game-state :players
+                                                           (->> players
+                                                                (filter #(= player-id (first %)))
+                                                                (into {})))))
+                             {}
+                             games))))))
 
-(defn router [{:keys [uri request-method] :as req}]
-  (let [{:keys [handler]} (bidi/match-route routes uri :request-method request-method)]
-    ((get handlers handler :not-found)
-     req)))
+(defn ws-handler [{:keys [app-state] :as req}]
+  (with-channel req channel
+    (swap! app-state add-player channel)
+    (on-close channel (fn [status]
+                        (swap! app-state remove-player channel)
+                        (println "channel closed:" status)))
+    (on-receive channel (fn [unmarshalled]
+                          (let [data (util/read-transit unmarshalled)]
+                            (when-not (= :ping data)
+                              (let [parse-result ((om/parser {:read p/readf
+                                                              :mutate p/mutatef})
+                                                  {:app-state app-state
+                                                   :channel channel}
+                                                  data)]
+                                (if-let [{:keys [result keys]} (-> parse-result first second)]
+                                  (send! channel (util/write-transit (select-keys result keys)))
+                                  (send! channel (util/write-transit parse-result))))))))))
 
 (defn wrap-state [handler app-state]
   (fn [req]
     (handler (assoc req :app-state app-state))))
 
 (defn prod-handler [app-state]
-  (-> router
-      (wrap-state app-state)
-      wrap-transit-response
-      wrap-transit-body))
+  (-> ws-handler
+      (wrap-state app-state)))
 
 (defn dev-handler [app-state]
   (fn [req]

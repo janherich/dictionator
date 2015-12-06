@@ -23,12 +23,12 @@
 (defui MultiplayerChoosingGame
   static om/IQuery
   (query [this]
-         [:teams])
+         [:games])
   Object
   (initLocalState [this]
                   {:form-input ""})
   (render [this]
-          (let [{:keys [teams]} (om/props this)
+          (let [{:keys [games]} (om/props this)
                 {:keys [submit-game-name]} (om/get-computed this)]
             (dom/div #js {:id "join game"}
                      (dom/div #js {:id "row"}
@@ -38,7 +38,7 @@
                               (dom/div #js {:className "col-md-3"} "")
                               (dom/div #js {:className "col-md-6 center"}
                                        (dom/ul #js {:className "list-group"}
-                                               (map existing-game teams)))
+                                               (map existing-game games)))
                               (dom/div #js {:className "col-md-12 text-center"}
                                        (dom/h2 #js {:className "game-name"}
                                                "or Create a new one"))
