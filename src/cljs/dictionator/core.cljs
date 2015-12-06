@@ -21,7 +21,7 @@
   Object
   (render [this]
           (let [{:keys [actual-screen name teams game-name]} (om/props this)]
-            (if (= actual-screen :multiplayer-screen)
+            (if  (= actual-screen :multiplayer-screen)
               (common/game-state {:teams teams
                                   :game-name game-name})
               (common/basic-wrapper {:name name

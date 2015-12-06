@@ -109,6 +109,31 @@
     (= actual-screen :input-name-screen) screen-2
     (= actual-screen :choose-game) screen-3))
 
+
+;; Wrapper for the game part - for single page application
+(defui Game
+  Object
+  (render [this]
+          (dom/div #js {:className "row"}
+                   (dom/div #js {:className "col-md-6 text-center"}
+                            (dom/div #js {:className "col-md-12 text-center previous-word"}
+                                     (dom/h3 #js {:className "prev"} "Previous word: ")
+                                     (dom/p #js {} "Herisk")
+                                     (dom/p #js {:className "last-letter"} "o"))
+                            (dom/form #js {}
+                                      (dom/input #js {:className "input-word"
+                                                      :type "text"
+                                                      :placeholder ""})))
+                   (dom/div #js {:className "col-md-3 player-list"}
+                            (dom/ul #js {:className "list-group points"}
+                                    (dom/h3 #js {} "Points")
+                                    "Points")))
+          footer))
+
+;; Factory for game wrapper
+(def game (om/factory Game))
+
+
 (defui GameState
   static om/IQuery
   (query [this]
@@ -118,37 +143,22 @@
           (let [{:keys [teams]} (om/props this)
                 submit-game-name (fn [game-name]
                                    (om/transact! this `[(screens/create-game! {:game-name ~game-name})]))]
-            (dom/div #js {:className "wrapper-game"}
-                     (dom/div #js {:className "row back-button"}
-                              (dom/a #js {:href "#"
-                                          :className "back"}
-                                     "⇦ Leave game"))
-                     (multiplayer/multiplayer-choosing-game (om/computed {:teams teams}
-                                                                         {:submit-game-name submit-game-name}))
+            (dom/div #js {:className "wrapper"}
+                     (dom/div #js {:className "board col-md-12"}
+                              (dom/div #js {:className "row back-button col-md-3"}
+                                       (dom/a #js {:href "#"
+                                                   :className "back"}
+                                              "⇦ Leave game"))
+
+                              (multiplayer/multiplayer-choosing-game (om/computed {:teams teams}
+                                                                                  {:submit-game-name submit-game-name})
+                                                                     ))
                      footer))))
 
 (def game-state (om/factory GameState))
 
-;; Wrapper for the game part - for single page application
-(defui Game
-  Object
-  (render [this]
-          (dom/span #js {:className "glyphicon glyphicon-star points"}
-                    (dom/p #js {} 0))
-          (dom/div #js {:className "row"}
-                   (dom/div #js {:className "col-md-12 text-center previous-word"}
-                            (dom/h3 #js {:className "prev"} "Previous word: ")
-                            (dom/p #js {} "Herisk")
-                            (dom/p #js {:className "last-letter"} "o"))
-                   (dom/div #js {:className "col-md-12 text-center"}
-                            (dom/form #js {}
-                                      (dom/input #js {:className "input-word"
-                                                      :type "text"
-                                                      :placeholder ""}))))
-          footer))
 
-;; Factory for game wrapper
-(def game (om/factory Game))
+
 
 
 ;; Wrapper for first two screens if singleplayer, first 3 screens if multiplayer
