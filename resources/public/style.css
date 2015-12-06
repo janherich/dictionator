@@ -191,10 +191,8 @@ h2 {
 }
 
 .back-button {
-    position: absolute;
-    margin-top: 60px;
-    margin-left: 90px;
     font-size: 30px;
+    float:left;
 }
 
 .back-button a {
@@ -206,9 +204,8 @@ h2 {
 }
 
 .points{
-    position: absolute;
-    margin-top: 60px;
-    margin-right: 100px;
+    float:right;
+    /* width: 200px; */
     right: 0;
     font-size: 30px;
     color:#3eacba;  /* #BDBD1A; */
@@ -219,8 +216,11 @@ h2 {
     display: inline-block;
 }
 
+.points li{
+    font-size:15px;}
+
 .previous-word {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .input-word {
@@ -296,4 +296,19 @@ form {
 
 p.name {
     font-size: 30px;
+}
+
+.board {
+    position:absolute;
+    top: 8%;
+    left: 5%;
+    width:1180px;
+    height:600px;;
+    /* margin-top: -250px; /\*set to a negative number 1/2 of your height*\/ */
+    /* margin-left: -590px;; /\*set to a negative number 1/2 of your width*\/ */
+    Background: white;
+}
+
+.badge {
+    margin-left: 30px;
 }

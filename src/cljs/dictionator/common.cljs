@@ -105,6 +105,9 @@
 
 ;; Component for selecting game (multiplayer/singleplayer)
 (defui SelectGame
+  static om/IQuery
+  (query [this]
+         [:submit-change-screen])
   Object
   (render [this]
           (dom/div #js {:className "select-game"}
