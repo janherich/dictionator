@@ -42,14 +42,15 @@
   Object
   (render [this]
           (let [{:keys [game-mode]} (om/props this)]
-            (dom/div #js {:className "wrapper-game"}
-                     (dom/div #js {:className "row back-button"}
-                              (dom/a #js {:href "#"
-                                          :className "back"}
-                                     "⇦ Leave game"))
-                     (if (= :single-player game-mode)
-                       (dom/div #js {} "Single player !")
-                       (multiplayer/multiplayer-choosing-game {}))
+            (dom/div #js {:className "wrapper"}
+                     (dom/div #js {:className "board"}
+                              (dom/div #js {:className "row back-button col-md-3"}
+                                       (dom/a #js {:href "#"
+                                                   :className "back"}
+                                              "⇦ Leave game"))
+                              (if (= :single-player game-mode)
+                                (dom/div #js {} "Single player !")
+                                (multiplayer/multiplayer-choosing-game {})))
                      footer))))
 
 (def game-menu (om/factory GameMenu))
