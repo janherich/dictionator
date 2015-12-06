@@ -17,12 +17,13 @@
 (defui RootView
   static om/IQuery
   (query [this]
-         [:actual-screen :name :teams])
+         [:actual-screen :name :teams :game-name])
   Object
   (render [this]
-          (let [{:keys [actual-screen name teams]} (om/props this)]
+          (let [{:keys [actual-screen name teams game-name]} (om/props this)]
             (if (= actual-screen :multiplayer-screen)
-              (common/game-state {:teams teams})
+              (common/game-state {:teams teams
+                                  :game-name game-name})
               (common/basic-wrapper {:name name
                                      :submit-name (fn [added-name]
                                                     (om/transact! this `[(screens/update-name! {:name ~added-name})]))
@@ -39,6 +40,10 @@
 (defmethod mutate 'screens/update-name!
   [{:keys [state]} _ {:keys [name]}]
   {:action (fn [] (swap! state #(assoc % :name name)))})
+
+(defmethod mutate 'screens/create-game!
+  [{:keys [state]} _ {:keys [game-name]}]
+  {:action (fn [] (swap! state #(assoc % :game-name game-name)))})
 
 (defn read [{:keys [state]} k _]
   {:value (get @state k)})

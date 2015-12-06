@@ -109,21 +109,22 @@
     (= actual-screen :input-name-screen) screen-2
     (= actual-screen :choose-game) screen-3))
 
-
-
 (defui GameState
   static om/IQuery
   (query [this]
          [:teams])
   Object
   (render [this]
-          (let [{:keys [teams]} (om/props this)]
+          (let [{:keys [teams]} (om/props this)
+                submit-game-name (fn [game-name]
+                                   (om/transact! this `[(screens/create-game! {:game-name ~game-name})]))]
             (dom/div #js {:className "wrapper-game"}
                      (dom/div #js {:className "row back-button"}
                               (dom/a #js {:href "#"
                                           :className "back"}
                                      "⇦ Leave game"))
-                     (multiplayer/multiplayer-choosing-game {:teams teams})
+                     (multiplayer/multiplayer-choosing-game (om/computed {:teams teams}
+                                                                         {:submit-game-name submit-game-name}))
                      footer))))
 
 (def game-state (om/factory GameState))

@@ -12,7 +12,6 @@
   (render [this]
           (let [{:keys [team-name]} (om/props this)]
             (dom/li #js {:className "list-group-item"}
-                    (.log js/console  team-name)
                     team-name
                     (dom/button #js {:type "button"
                                      :className "btn btn-success right small"}
@@ -26,9 +25,11 @@
   (query [this]
          [:teams])
   Object
+  (initLocalState [this]
+                  {:form-input ""})
   (render [this]
-          (let [{:keys [teams]} (om/props this)]
-            (.log js/console teams)
+          (let [{:keys [teams]} (om/props this)
+                {:keys [submit-game-name]} (om/get-computed this)]
             (dom/div #js {:id "join game"}
                      (dom/div #js {:id "row"}
                               (dom/div #js {:className "col-md-12 text-center"}
@@ -43,13 +44,19 @@
                                                "or Create a new one"))
                               (dom/div #js {:className "col-md-4"} "")
                               (dom/div #js {:className "col-md-4 center add-game"}
-                                       (dom/div #js {:className "input-group"}
-                                                (dom/input #js {:type "text"
-                                                                :className "form-control"
-                                                                :placeholder "Name of your game"})
-                                                (dom/span #js {:className "input-group-btn"}
-                                                          (dom/button #js {:className "btn btn-default"
-                                                                           :type "button"} "➔")))))))))
+                                       (dom/form #js {:onSubmit (fn [event]
+                                                                  (.preventDefault event)
+                                                                  (submit-game-name (:form-input (om/get-state this))))}
+                                                 (dom/div #js {:className "input-group"}
+                                                          (dom/input #js {:type "text"
+                                                                          :className "form-control"
+                                                                          :placeholder "Name of your game"
+                                                                          :value (:form-input (om/get-state this))
+                                                                          :onChange (fn [event]
+                                                                                      (om/update-state! this assoc :form-input (.. event -target -value)))})
+                                                          (dom/span #js {:className "input-group-btn"}
+                                                                    (dom/button #js {:className "btn btn-default"
+                                                                                     :type "submit"} "➔"))))))))))
 
 
 ;; Factory for component for screen for new-game or join existing game
