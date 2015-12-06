@@ -9,7 +9,10 @@
 (def footer
   (dom/div #js {:id "footer"}
            (dom/p #js {:className "footer_p"}
-                  "Made with ♥ CodeCouple")))
+                  (dom/a #js {:href "https://github.com/janherich/dictionator/blob/master/README.md"
+                              :className "rules"}
+                         "Rules")
+                  " | Made with ♥ CodeCouple")))
 
 
 
