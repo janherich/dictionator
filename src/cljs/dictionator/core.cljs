@@ -7,7 +7,7 @@
             [dictionator.common :as common]))
 
 
-(def data {:actual-screen :multiplayer-state
+(def data {:actual-screen :initial-screen
            :teams [{:team-name "twiggy"}
                    {:team-name "siggi"}
                    {:team-name "ibi"}
@@ -21,7 +21,7 @@
   Object
   (render [this]
           (let [{:keys [actual-screen name teams]} (om/props this)]
-            (if (= actual-screen :multiplayer-state)
+            (if (= actual-screen :multiplayer-screen)
               (common/game-state {:teams teams})
               (common/basic-wrapper {:name name
                                      :submit-name (fn [added-name]
