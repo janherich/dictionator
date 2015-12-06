@@ -119,7 +119,7 @@ a:hover {
 }
 
 #playground {
-    margin-top: 60px;
+    margin-top: 40px;
 
 }
 
@@ -323,4 +323,8 @@ p.name {
 
 #lets-play-button {
     margin-left: 125px;
+}
+
+.select-game {
+    margin-left: 125px
 }

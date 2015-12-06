@@ -129,19 +129,15 @@
   (render [this]
           (dom/div #js {:className "select-game"}
                    (dom/div #js {:className "col-md-12"}
-                            (dom/div #js {:className "col-md-5"} "")
                             (dom/div #js {:className "col-md-2 center meed-margin"}
                                      (dom/a #js {:href "#"
                                                  :className "push_button red"}
-                                            "Singleplayer"))
-                            (dom/div #js {:className "col-md-5"} ""))
+                                            "Singleplayer")))
                    (dom/div #js {:className "col-md-12 need-margin"}
-                            (dom/div #js {:className "col-md-5"})
                             (dom/div #js {:className "col-md-2 center"}
                                      (dom/a #js {:href "#"
                                                  :className "push_button blue"}
-                                            "Multiplayer"))
-                            (dom/div #js {:className "col-md-5"})))))
+                                            "Multiplayer"))))))
 
 ;; Factory for selecting game
 (def select-game (om/factory SelectGame))
