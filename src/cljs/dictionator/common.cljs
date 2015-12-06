@@ -11,25 +11,42 @@
            (dom/p #js {:className "footer_p"}
                   "Made with ♥ CodeCouple")))
 
-;; Wrapper for the game part - for single page application
+
+
+(defui GamePlayer
+  static om/IQuery
+  (query [this]
+         [])
+  Object
+  (render [this]
+          (dom/li #js {:className "list-group-item"}
+                  (dom/span #js {:className "badge"}
+                            "1984")
+                  "Dajanka")))
+
+
+;; Wrapper for the game part 
 (defui Game
   static om/IQuery
   (query [this]
          [:players :current-word])
   Object
   (render [this]
-          (dom/span #js {:className "glyphicon glyphicon-star points"}
-                    (dom/p #js {} 0))
           (dom/div #js {:className "row"}
-                   (dom/div #js {:className "col-md-12 text-center previous-word"}
-                            (dom/h3 #js {:className "prev"} "Previous word: ")
-                            (dom/p #js {} "Herisk")
-                            (dom/p #js {:className "last-letter"} "o"))
-                   (dom/div #js {:className "col-md-12 text-center"}
+                   (dom/div #js {:className "col-md-6 text-center"}
+                            (dom/div #js {:className "col-md-12 text-center previous-word"}
+                                     (dom/h3 #js {:className "prev"} "Previous word: ")
+                                     (dom/p #js {} "Herisk")
+                                     (dom/p #js {:className "last-letter"} "o"))
                             (dom/form #js {}
                                       (dom/input #js {:className "input-word"
                                                       :type "text"
-                                                      :placeholder ""}))))
+                                                      :placeholder ""})))
+                   (dom/div #js {:className "col-md-3 player-list"}
+                            (dom/ul #js {:className "list-group points"}
+                                    (dom/h3 #js {} "Points")
+                                    "Points")))
+
           footer))
 
 ;; Factory for game wrapper
