@@ -1,6 +1,8 @@
 # Dictionator
 ### Simple word game
 
+![ScreenShot](http://s16.postimg.org/kt13vnnb9/Screen_Shot_2015_12_07_at_00_01_06.png)
+
 ## <p style='color:#88cc33'> Game rules: </p>
 
 ###### <p style="color: rgba(193, 16, 103, 0.82)">Singleplayer mode</p>
