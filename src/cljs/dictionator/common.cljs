@@ -25,7 +25,7 @@
                   "Dajanka")))
 
 
-;; Wrapper for the game part 
+;; Wrapper for the game part
 (defui Game
   static om/IQuery
   (query [this]
@@ -78,13 +78,14 @@
   (render [this]
           (let [{:keys [init-game!]} (om/get-computed this)]
             (dom/div #js {:className "lets-play"}
-                     (dom/div #js {:className "col-md-5"})
+
                      (dom/div #js {:className "col-md-2 center"}
                               (dom/button #js {:type "submit"
                                                :onClick (fn [event]
                                                           (.preventDefault event)
                                                           (init-game!))}
-                                          (dom/div #js {:className "push_button red"}
+                                          (dom/div #js {:className "push_button red"
+                                                        :id "lets-play-button"}
                                                    "Let's play")))))))
 
 ;; Factory for the let's play button (first screen)
@@ -98,8 +99,7 @@
   (render [this]
           (let [{:keys [set-player-name!]} (om/get-computed this)]
             (dom/div #js {:className "input-name"}
-                     (dom/div #js {:className "col-md-4"} "")
-                     (dom/div #js {:className "col-lg-4 text-center"}
+                     (dom/div #js {:className "col-lg-12 text-center"}
                               (dom/form #js {:onSubmit (fn [event]
                                                          (.preventDefault event)
                                                          (set-player-name! (:form-input (om/get-state this)))
@@ -116,7 +116,6 @@
                                                                             :type "submit"}
                                                                        "➔")))))
                      (dom/div #js {:className "col-lg-4"} "")))))
-
 
 ;; Factory for Input form
 (def input-name (om/factory InputName))
@@ -160,8 +159,7 @@
                 set-game-mode! (fn [mode]
                                  (om/transact! this `[(dict/set-game-mode! {:mode ~mode})]))]
             (dom/div #js {:className "wrapper"}
-                     (dom/div #js {:className "col-md-12 text-center"
-                                   :id "playground"}
+                     (dom/div #js {:className "col-md-12 text-center center-to-screen"}
                               (dom/div #js {:className "row"}
                                        (dom/div #js {:className "col-md-12 text-center"
                                                      :id "playground"}
