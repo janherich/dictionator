@@ -1129,3 +1129,163 @@ notifying browser that file changed:  out/dictionator/common.js
 [0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
 notifying browser that file changed:  out/dictionator/core.js
 [32mSuccessfully compiled "resources/public/js/main.js" in 1.66 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: No such namespace: common, could not locate common.cljs, common.cljc, or Closure namespace "" at line 129 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/common.cljs
+WARNING: Use of undeclared Var common/footer at line 129 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/common.cljs
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.658 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: No such namespace: common, could not locate common.cljs, common.cljc, or Closure namespace "" at line 127 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/common.cljs
+WARNING: Use of undeclared Var common/footer at line 127 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/common.cljs
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.2 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.19 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.common/GameWrapper at line 134 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/common.cljs
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.991 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.176 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.multiplayer/players at line 18 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/multiplayer.cljs
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.192 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.multiplayer/players at line 18 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/multiplayer.cljs
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.084 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.303 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.multiplayer/players at line 17 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/multiplayer.cljs
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.88 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.common/multiplayer-choosing-game at line 113 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/common.cljs
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.247 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.778 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.common/multiplayer-state at line 22 src/cljs/dictionator/core.cljs
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.821 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.common/multiplayer-state at line 22 src/cljs/dictionator/core.cljs
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.268 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.421 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.421 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.multiplayer/players at line 17 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/multiplayer.cljs
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.923 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.multiplayer/players at line 17 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/multiplayer.cljs
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.062 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.852 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.005 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.12 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.404 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.multiplayer/group-name at line 15 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/multiplayer.cljs
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.269 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.62 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.541 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.406 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.198 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.multiplayer/group-name at line 15 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/multiplayer.cljs
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.096 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.329 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.multiplayer/group-name at line 15 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/multiplayer.cljs
+WARNING: Wrong number of args (0) passed to cljs.core/map at line 34 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/multiplayer.cljs
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.933 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.multiplayer/group-name at line 15 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/multiplayer.cljs
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.995 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.multiplayer/group-name at line 15 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/multiplayer.cljs
+WARNING: Use of undeclared Var dictionator.multiplayer/teams at line 38 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/multiplayer.cljs
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.097 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/core.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.85 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.multiplayer/team-name at line 15 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/multiplayer.cljs
+WARNING: Use of undeclared Var dictionator.multiplayer/teams at line 38 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/multiplayer.cljs
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.287 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+WARNING: Use of undeclared Var dictionator.multiplayer/team-name at line 15 /Users/Dajanka/Development/dictionator/src/cljs/dictionator/multiplayer.cljs
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.519 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.008 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.793 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.583 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.049 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/multiplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.05 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 3.342 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.1 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 1.108 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.863 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/common.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.815 seconds.[0m
+[0mCompiling "resources/public/js/main.js" from ["src/cljs/"]...
+notifying browser that file changed:  out/dictionator/singleplayer.js
+[32mSuccessfully compiled "resources/public/js/main.js" in 0.396 seconds.[0m

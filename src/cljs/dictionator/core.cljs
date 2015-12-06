@@ -7,23 +7,28 @@
             [dictionator.common :as common]))
 
 
-(def data {:actual-screen :initial-screen
-           })
+(def data {:actual-screen :multiplayer-state
+           :teams [{:team-name "twiggy"}
+                   {:team-name "siggi"}
+                   {:team-name "ibi"}
+                   {:team-name "jojo"}]})
 
 ;; Rooting component with the main logic
 (defui RootView
   static om/IQuery
   (query [this]
-         [:actual-screen :name])
+         [:actual-screen :name :teams])
   Object
   (render [this]
-          (let [{:keys [actual-screen name]} (om/props this)]
-            (common/basic-wrapper {:name name
-                                   :submit-name (fn [added-name]
-                                                  (om/transact! this `[(screens/update-name! {:name ~added-name})]))
-                                   :actual-screen actual-screen
-                                   :submit-change-screen (fn [changed-screen]
-                                                           (om/transact! this `[(screens/update-screen! {:actual-screen ~changed-screen})]))}))))
+          (let [{:keys [actual-screen name teams]} (om/props this)]
+            (if (= actual-screen :multiplayer-state)
+              (common/game-state {:teams teams})
+              (common/basic-wrapper {:name name
+                                     :submit-name (fn [added-name]
+                                                    (om/transact! this `[(screens/update-name! {:name ~added-name})]))
+                                     :actual-screen actual-screen
+                                     :submit-change-screen (fn [changed-screen]
+                                                             (om/transact! this `[(screens/update-screen! {:actual-screen ~changed-screen})]))})))))
 
 (defmulti mutate (fn [_ k _] k))
 
