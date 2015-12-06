@@ -12,6 +12,7 @@
            :current-game nil
            :games-list nil})
 
+
 ;; Rooting component with the main logic
 (defui RootView
   static om/IQuery

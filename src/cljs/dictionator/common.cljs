@@ -9,9 +9,39 @@
 (def footer
   (dom/div #js {:id "footer"}
            (dom/p #js {:className "footer_p"}
-                  "Made with ♥ CodeCouple")))
+                  (dom/a #js {:href "https://github.com/janherich/dictionator/blob/master/README.md"
+                              :className "rules"}
+                         "Rules")
+                  " | Made with ♥ CodeCouple")))
 
-;; Wrapper for the game part - for single page application
+(defui GamePlayer
+  static om/IQuery
+  (query [this]
+         [])
+  Object
+  (render [this]
+          (dom/li #js {:className "list-group-item"}
+                  (dom/span #js {:className "badge"}
+                            "1984")
+                  "Dajanka")))
+
+(comment
+  (dom/div #js {:className "row"}
+           (dom/div #js {:className "col-md-6 text-center"}
+                    (dom/div #js {:className "col-md-12 text-center previous-word"}
+                             (dom/h3 #js {:className "prev"} "Previous word: ")
+                             (dom/p #js {} "Herisk")
+                             (dom/p #js {:className "last-letter"} "o"))
+                    (dom/form #js {}
+                              (dom/input #js {:className "input-word"
+                                              :type "text"
+                                              :placeholder ""})))
+           (dom/div #js {:className "col-md-3 player-list"}
+                    (dom/ul #js {:className "list-group points"}
+                            (dom/h3 #js {} "Points")
+                            "Points"))))
+
+;; Wrapper for the game part
 (defui Game
   static om/IQuery
   (query [this]
@@ -49,14 +79,15 @@
   Object
   (render [this]
           (let [{:keys [game-mode current-game]} (om/props this)]
-            (dom/div #js {:className "wrapper-game"}
-                     (dom/div #js {:className "row back-button"}
-                              (dom/a #js {:href "#"
-                                          :className "back"}
-                                     "⇦ Leave game"))
-                     (if (= :single-player game-mode)
-                       (game current-game)
-                       (multiplayer/multiplayer-choosing-game {}))
+            (dom/div #js {:className "wrapper"}
+                     (dom/div #js {:className "board"}
+                              (dom/div #js {:className "row back-button col-md-3"}
+                                       (dom/a #js {:href "#"
+                                                   :className "back"}
+                                              "⇦ Leave game"))
+                              (if (= :single-player game-mode)
+                                (game current-game)
+                                (multiplayer/multiplayer-choosing-game {})))
                      footer))))
 
 (def game-menu (om/factory GameMenu))
@@ -67,13 +98,13 @@
   (render [this]
           (let [{:keys [init-game!]} (om/get-computed this)]
             (dom/div #js {:className "lets-play"}
-                     (dom/div #js {:className "col-md-5"})
                      (dom/div #js {:className "col-md-2 center"}
                               (dom/button #js {:type "submit"
                                                :onClick (fn [event]
                                                           (.preventDefault event)
                                                           (init-game!))}
-                                          (dom/div #js {:className "push_button red"}
+                                          (dom/div #js {:className "push_button red"
+                                                        :id "lets-play-button"}
                                                    "Let's play")))))))
 
 ;; Factory for the let's play button (first screen)
@@ -87,8 +118,7 @@
   (render [this]
           (let [{:keys [set-player-name!]} (om/get-computed this)]
             (dom/div #js {:className "input-name"}
-                     (dom/div #js {:className "col-md-4"} "")
-                     (dom/div #js {:className "col-lg-4 text-center"}
+                     (dom/div #js {:className "col-lg-12 text-center"}
                               (dom/form #js {:onSubmit (fn [event]
                                                          (.preventDefault event)
                                                          (set-player-name! (:form-input (om/get-state this)))
@@ -108,6 +138,19 @@
 
 ;; Factory for Input form
 (def input-name (om/factory InputName))
+
+(comment ;; use styles from this
+  (dom/div #js {:className "select-game"}
+           (dom/div #js {:className "col-md-12"}
+                    (dom/div #js {:className "col-md-2 center meed-margin"}
+                             (dom/a #js {:href "#"
+                                         :className "push_button red"}
+                                    "Singleplayer")))
+           (dom/div #js {:className "col-md-12 need-margin"}
+                    (dom/div #js {:className "col-md-2 center"}
+                             (dom/a #js {:href "#"
+                                         :className "push_button blue"}
+                                    "Multiplayer")))))
 
 ;; Component for selecting game (multiplayer/singleplayer)
 (defui SelectGame
@@ -148,8 +191,7 @@
                 set-game-mode! (fn [mode]
                                  (om/transact! this `[(dict/set-game-mode! {:mode ~mode}) :game-mode :current-game]))]
             (dom/div #js {:className "wrapper"}
-                     (dom/div #js {:className "col-md-12 text-center"
-                                   :id "playground"}
+                     (dom/div #js {:className "col-md-12 text-center center-to-screen"}
                               (dom/div #js {:className "row"}
                                        (dom/div #js {:className "col-md-12 text-center"
                                                      :id "playground"}
